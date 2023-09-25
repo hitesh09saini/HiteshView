@@ -1,4 +1,3 @@
-
 .btn {
     position: relative;
     display: flex;
@@ -48,7 +47,7 @@
     transition: 0.8s, left 0s, top 0s;
 }
 
-.inner-cont{
+.inner-cont {
     width: 90%;
     position: relative;
     display: flex;
@@ -56,7 +55,7 @@
 }
 
 
-.info{
+.info {
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -66,7 +65,7 @@
 
 }
 
-h1{
+h1 {
     color: #ffffff;
     font-weight: 900;
     font-size: 4rem;
@@ -74,40 +73,88 @@ h1{
     position: absolute;
     left: 0%;
     top: 30%;
-    animation: anim  2000ms ease forwards;
+    animation: anim 2000ms ease forwards;
     animation-delay: 500ms;
 
 }
 
-a{
-   text-decoration: none;
+a {
+    text-decoration: none;
 }
 
 
-.contacts-cont img{
-    animation: anim  1000ms ease forwards;
+.contacts-cont img {
+    animation: anim 1000ms ease forwards;
     animation-delay: 500ms;
-  }
-  
+}
+
+.skills-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-skills {
+    width: 90%;
+    display: flex;
+
+    justify-content: end;
+}
+
+.cont {
+
+    /* background-color: #871bcf; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.rang {
+    width: 90%;
+    height: 30px;
+
+    background-color: #d86bf3;
+}
+
 @media screen and (max-width:600px) {
-    
-    .inner-cont{
+
+    .inner-cont {
         display: block;
     }
-    .info{
+
+    .info {
         flex-direction: row;
     }
-    .info{
+
+    .info {
         align-self: flex-end;
+    }
+
+    .inner-skills {
+        justify-content: flex-start;
+    }
+
+    .cont {
+        width: 100%;
+    }
+
+
+
+}
+
+@media screen and (max-width:1000px) {
+    .inner-skills h1 {
+        top: 15%;
     }
 
 }
 
 @keyframes anim {
     to {
-      transform: translate(50%);
-     
-      opacity: 1;
+        transform: translate(50%);
+
+        opacity: 1;
     }
-  }
-  
+}

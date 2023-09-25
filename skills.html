@@ -10,11 +10,48 @@
 </head>
 <body>
     <div class="skills-cont">
-        <div class="btn" style=" font-size: 15px; background: #000; padding: 10px; position: absolute; top: 20px; left: 20%; "><a href="./index.html">Home</a></div>
+        <div  class="btn" style=" font-size: 15px; background: #000; padding: 10px; position: absolute; top: 20px; left: 20%; "><a href="./index.html">Home</a></div>
+        <div class="inner-skills">
+            <h1 id="p"></h1>
 
+            <div class="cont">
+             <div class="rang"></div>
+             <div class="rang"></div>
+             <div class="rang"></div>
+             <div class="rang"></div>
+             <div class="rang"></div>
+
+            </div>
+        </div>
+     
 
     </div>
     <script src="main.js"></script>
+    <script>
+       
+        let i =0;
+        const str = "Skills.";
+        function write(){
+            // if(i<str.length()){
+                document.getElementById('p').innerText += str.charAt(i);
+               i++;
+            // }else{
+            //     i =0;
+            // }
+        }
+
+        document.addEventListener('DOMContentLoaded',()=>{
+            //   document.getElementById('p').innerText = "hitesh"   
+            setInterval(write,400);
+            setTimeout(show,1000);
+        });
+
+        function show(){
+
+        }
+
+
+    </script>
     
 </body>
 </html>
