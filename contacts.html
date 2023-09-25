@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="btn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="contacts-cont">
+
+        <div class="inner-cont">
+            <h1>Hye! Connect With Me</h1>
+            <div class="img">
+
+                <img src="./images/img3.png" alt="">
+
+            </div>
+
+            <div class="info">
+                <a href="https://github.com/hitesh09saini" target="_blank">
+                    <div class="btn"><i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i></div>
+                </a>
+                <a href="https://www.instagram.com/hiteshsaini__09/" target="_blank">
+                    <div class="btn"><i class="fa-brands fa-instagram fa-2xl" style="color: #000000;"></i></div>
+                </a>
+                <a href="https://twitter.com/hiteshsaini__09" target="_blank">
+                    <div class="btn"><i class="fa-brands fa-x-twitter fa-2xl" style="color: #000000;"></i></i></div>
+                </a>
+                <a href="https://www.linkedin.com/in/hitesh-saini09/" target="_blank">
+                    <div class="btn"><i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i></div>
+                </a>
+                <a href="mailto: hitesh9694saini@gmail.com" target="_blank">
+                    <div class="btn"><i class="fa-regular fa-envelope fa-2xl " style="color: #000000;"></i></div>
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+    <script>
+        document.querySelectorAll(".btn").forEach((btn) => {
+            btn.addEventListener("mousemove", (e) => {
+                let x = e.offsetX;
+                let y = e.offsetY;
+                let btnWidth = btn.clientWidth;
+                let btnHeight = btn.clientHeight;
+                let transX = x - btnWidth / 2;
+                let transY = y - btnHeight / 2;
+                btn.style.transform = `translateX(${transX}px) translateY(${transY}px)`;
+
+                let mx = e.pageX - btn.offsetLeft;
+                let my = e.pageY - btn.offsetTop;
+                btn.style.setProperty("--x", mx + "px");
+                btn.style.setProperty("--y", my + "px");
+            });
+            btn.addEventListener("mouseout", (e) => {
+                btn.style.transform = "";
+            });
+        });
+    </script>
+</body>
+
+</html>
