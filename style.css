@@ -158,6 +158,11 @@ nav a {
   height: 100vh;
 }
 
+/* skills */
+.skills-cont{
+  height: 100vh;
+}
+
 /* contact */
 .contacts-cont{
   height: 100vh;
