@@ -141,3 +141,46 @@
     margin: .5rem 0 0;
   }
   
+  .about-me {
+    
+    z-index: 50; 
+    position: relative;
+    height: 70vh;
+    display: flex;
+    color: #fff;
+    padding: 30px;
+    justify-content: space-around;
+  
+  }
+  
+  .left
+  {
+     font-size: 5rem;
+     font-weight: 900;
+     padding: 30px;
+     /* background-color: #6859a3; */
+    
+  }
+  
+  
+  .right{
+    padding: 20px;
+
+    width: 60%;
+    height: 200px;
+    font-size: 1.4rem;
+    /* background-color: #72c2c2; */
+  }
+  
+  .right h2{
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width:1000px) {
+    .about-me{
+      display: block;
+    }
+    .right{
+      width: 100%;
+    }
+  }
