@@ -23,11 +23,9 @@ nav .menu-icon {
 
 }
 
-
 .menu-container .close-icon {
   width: 40px;
 }
-
 
 
 .hero {
@@ -152,27 +150,6 @@ nav a {
   
 }
 
-/* about  */
-
-.about-container{
-  height: 100vh;
-}
-
-
-
-/* contact */
-.contacts-cont{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-/* project */
-.project-cont{
-  height: 100vh;
-}
 
 @media (max-width: 1147px) {
   .hero h2:first-child {
@@ -186,9 +163,6 @@ nav a {
     bottom: 80px;
   }
 
-  /* .hero img {
-    height: 90vh;
-  } */
 }
 
 @media (max-width: 985px) {
@@ -224,12 +198,12 @@ nav a {
 
 @media (max-width: 583px) {
   .hero h2:first-child {
-    font-size: 80px; /* Adjusted font size to be closer to the last child */
+    font-size: 80px; 
     top: 60px;
   }
 
   .hero h2:last-child {
-    font-size: 100px; /* Adjusted font size for the last child */
+    font-size: 100px; 
     bottom: 40px;
   }
 
@@ -241,11 +215,3 @@ nav a {
 
 
 
-
-@keyframes anim {
-  to {
-    transform: translate(-50%, 0);
-   
-    opacity: 1;
-  }
-}

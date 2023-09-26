@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    background-image: radial-gradient(circle 1000px at 23.4% -21.8%,
+            rgb(38, 9, 85) 10%,
+            rgba(0, 0, 0, 1) 100.2%);
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    color: #000;
+    background-color: #9cd713;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 4rem;
+    width: 30%;
+    /* position: absolute; */
+    left: 0%;
+    top: 100px;
+    animation: anim 2000ms ease forwards;
+    animation-delay: 500ms;
+
+}
+
+/* projects */
+.cont-projects {
+    margin-top: 400px;
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: #9cd713; */
+}
+
+.num-projects {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: #9cd713; */
+
+}
+
+.num-projects div {
+    background: #000;
+}
+
+.num-projects div:hover {
+    transform: scaleY(2);
+}
+
+/* skills */
+
+/* skills */
+.skills-cont {
+    margin-top: 400px;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+
+}
+
+.inner-skills {
+
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 100px;
+    border: 4px solid #fff;
+    background: url('./images/img4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.cont {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+/* about */
+
+
+.about-me {
+    width: 100%;
+    height: 80vh;
+    margin-top: 100px;   
+    z-index: 50; 
+    position: relative;
+    height: 70vh;
+    display: flex;
+    color: #fff;
+    padding: 30px;
+    justify-content: space-around;
+  
+  }
+  
+  .left
+  {
+     font-size: 5rem;
+     font-weight: 900;
+     padding: 30px;
+  }
+  
+  
+  .right{
+    padding: 20px;
+    margin-bottom: 100px;
+    width: 60%;
+    height: auto;
+    font-size: 1.4rem;
+  }
+  
+  .right h2{
+    margin-bottom: 30px;
+  }
+
+
+ 
+
+/* mediaquary */
+
+
+
+@media screen and (max-width:1095px) {
+   
+
+    
+    .skills-cont {
+        margin-top: 300px;
+
+    }
+
+    .inner-skills {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .pic {
+        margin: 20px;
+    }
+
+    .cont {
+        width: 100%;
+    }
+
+    .about-me {
+        display: block;
+        height: auto;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+   
+
+}
+
+
+
+/* animation */
+
+@keyframes anim1 {
+    to {
+      transform: translatex(0);
+     
+      opacity: 1;
+    }
+  }
+  
+
+@keyframes anim {
+    to {
+        transform: translate(40%);
+        opacity: 1;
+    }
+}
