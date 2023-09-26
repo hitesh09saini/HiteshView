@@ -12,7 +12,6 @@ body {
     rgb(38, 9, 85) 0.2%,
     rgba(0, 0, 0, 1) 100.2%
   );
-  overflow: hidden;
   user-select: none;
 }
 
@@ -34,7 +33,6 @@ nav .menu-icon {
 }
 
 .hero img {
-  /* height: 100vh; */
   bottom: 0;
   left: 50%;
   transform: translate(calc(-50% + 200px), 0);
@@ -199,11 +197,11 @@ nav a {
 @media (max-width: 583px) {
   .hero h2:first-child {
     font-size: 80px; 
-    top: 60px;
+    
   }
 
   .hero h2:last-child {
-    font-size: 100px; 
+    font-size: 70px; 
     bottom: 40px;
   }
 
@@ -212,6 +210,24 @@ nav a {
   }
 }
 
+@media (max-width: 313px) {
+  .hero h2:first-child {
+    font-size: 60px; 
+    
+  }
+
+  .hero h2:last-child {
+    font-size: 40px; 
+    bottom: 40px;
+  }
+}
+
+/* animation */
 
 
-
+@keyframes anim {
+  to {
+      transform: translate(-50%);
+      opacity: 1;
+  }
+}
